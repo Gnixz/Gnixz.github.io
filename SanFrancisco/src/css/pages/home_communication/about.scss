@@ -1,0 +1,94 @@
+.about {
+  background-color: #f3f5fb;
+  padding: 100px 0;
+  @include breakpoint(991) {
+    padding: 50px 0;
+  }
+  &__image {
+    height: 500px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    &:nth-child(2) {
+      margin-top: 50px;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    &:hover {
+      img {
+        transform: scale(1.035) rotate(0.05deg);
+        transition: all 0.3s linear;
+      }
+    }
+  }
+  &__box {
+    &-icon {
+      height: 50px;
+      width: 50px;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-title {
+      color: #212529;
+      font-size: 28px;
+      margin-top: 30px;
+    }
+    &-text {
+      margin: 15px 0 35px;
+    }
+    &-item {
+      padding-left: 50px;
+      position: relative;
+      margin-bottom: 30px;
+      .item__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 36px;
+        width: 30px;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .item__title {
+        color: #212529;
+        font-size: 18px;
+      }
+    }
+    &-tick {
+      position: relative;
+      padding-left: 40px;
+      .tick__icon {
+        position: absolute;
+        top: auto;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .tick__title {
+        color: #212529;
+        margin-bottom: 20px;
+        white-space: nowrap;
+      }
+    }
+    .btn {
+      margin-top: 30px;
+    }
+  }
+  .divider-full {
+    background-color: #00dadc;
+    @include min-breakpoint(992) {
+      display: none;
+    }
+  }
+}

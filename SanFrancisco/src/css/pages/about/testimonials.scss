@@ -1,0 +1,112 @@
+.testimonials {
+  position: relative;
+  padding-top: 100px;
+  background-color: #323754;
+  @include breakpoint(991) {
+    padding-top: 50px;
+  }
+  &__content {
+    &-subtitle {
+      color: #afbbc6;
+      font-size: 15px;
+    }
+    &-title {
+      color: white;
+      font-size: 28px;
+      margin: 20px 0 15px;
+      width: 70%;
+    }
+    &-dots {
+      position: absolute;
+      bottom: 7%;
+      left: 10%;
+      height: 255px;
+      width: auto;
+      @include breakpoint(1439) {
+        left: 6%;
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__box {
+    position: relative;
+    padding: 35px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.25), 0 0px 10px rgba(0, 0, 0, 0.22);
+    &-item {
+      text-align: center;
+      img {
+        width: auto;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+      }
+      .item__title {
+        font-size: 18px;
+        color: #0f66dc;
+        margin: 25px 0 30px;
+      }
+      .item__text {
+        font-style: italic;
+      }
+      .item__icon {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        i {
+          color: #ffc100;
+          margin: 0 4px;
+        }
+      }
+      .item__info {
+        margin-top: 0;
+        font-size: 14px;
+        color: #212529;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+
+.testimonials .owl-testimonials {
+  position: relative;
+  transform: translateY(30%);
+}
+.testimonials .owl-item > .testimonials__box {
+  cursor: pointer;
+  margin: 80px 30px 40px;
+  transition: margin 0.4s ease;
+}
+.testimonials .owl-item.center > .testimonials__box {
+  cursor: pointer;
+  margin: 50px 30px 0;
+}
+.testimonials .owl-item:not(.center) > .testimonials__box:hover {
+  opacity: 0.9;
+}
+.testimonials .owl-carousel .owl-dots .owl-dot span {
+  height: 10px;
+  width: 15px;
+  background-color: #cecece;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.testimonials .owl-carousel .owl-dots .owl-dot.active span {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #323754;
+}
+.testimonials .owl-carousel .owl-dots.disabled {
+  display: block;
+}

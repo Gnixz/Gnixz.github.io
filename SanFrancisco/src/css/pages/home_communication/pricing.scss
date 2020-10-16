@@ -1,0 +1,109 @@
+.pricing {
+  background-color: white;
+  padding: 100px 0;
+  @include breakpoint(991) {
+    padding: 50px 0;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+    &-heading {
+      color: #212529;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .divider {
+      background-color: #00dadc;
+    }
+    &-text {
+      margin-top: 25px;
+    }
+  }
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    span {
+      color: #0f66dc;
+    }
+  }
+  &__box {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 35px 0 60px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.25), 0 0px 10px rgba(0, 0, 0, 0.22);
+    &::before {
+      content: "";
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      background-color: #00dadc;
+      transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    &-item {
+      padding: 0 25px;
+      text-align: center;
+      .item__title {
+        color: #212529;
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+      .item__text {
+        margin-bottom: 20px;
+        span {
+          color: #212529;
+          font-size: 28px;
+          font-weight: 600;
+          span {
+            font-size: 40px;
+          }
+        }
+      }
+      .divider-full {
+        background-color: #e7e7e7;
+        margin: 0;
+      }
+      ul {
+        margin: 30px 0 30px;
+        li {
+          margin: 0 0 15px;
+          color: #212529;
+          font-size: 18px;
+          font-weight: 600;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.owl-pricing {
+  margin: 50px 0;
+}
+.pricing .owl-item > .pricing__box {
+  cursor: pointer;
+  margin: 40px 15px;
+  transition: margin 0.4s ease;
+  @include breakpoint(767) {
+    margin: 20px 15px;
+  }
+}
+.pricing .owl-item.center > .pricing__box {
+  cursor: pointer;
+  margin: 20px 15px;
+  border: 0;
+  &::before {
+    width: 100%;
+  }
+}
+.pricing .owl-carousel .owl-dots.disabled {
+  display: none;
+}

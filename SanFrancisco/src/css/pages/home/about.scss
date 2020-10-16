@@ -1,0 +1,98 @@
+.about {
+   padding: 100px 0;
+   @include breakpoint(991) {
+      padding: 50px 0;
+   }
+   &__content {
+      padding: 60px 60px 60px 0;
+      @include breakpoint(991) {
+         padding: 0 0 60px;
+         text-align: center;
+      }
+      &-title {
+         color: #212529;
+         font-size: 28px;
+         margin-bottom: 40px;
+      }
+      &-text {
+         font-size: 18px;
+      }
+      &-button {
+         display: flex;
+         align-items: center;
+         a {
+            margin-right: 10px;
+            margin-top: 60px;
+            @include breakpoint(991) {
+               margin-right: auto;
+               margin-left: auto;
+            }
+         }
+      }
+   }
+   &__image {
+      position: relative;
+      height: 100%;
+      padding: 250px;
+      &-after {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 370px;
+         height: 400px;
+         border-radius: 30px;
+         overflow: hidden;
+         z-index: 25;
+         cursor: pointer;
+         @include breakpoint(767) {
+            right: -10%;
+         }
+         @include breakpoint(575) {
+            right: -5%;
+         }
+         @include breakpoint(350) {
+            right: 5%;
+         }
+         img {
+            height: 100%;
+            object-fit: cover;
+         }
+         &:hover {
+            img {
+               transform: scale(1.035) rotate(0.05deg);
+               transition: all 0.3s linear;
+            }
+         }
+      }
+      &-before {
+         position: absolute;
+         bottom: 20%;
+         right: 50%;
+         width: 320px;
+         height: 400px;
+         border-radius: 30px;
+         overflow: hidden;
+         z-index: 52;
+         cursor: pointer;
+         @include breakpoint(767) {
+            right: 45%;
+         }
+         @include breakpoint(575) {
+            right: 55%;
+         }
+         @include breakpoint(350) {
+            right: 65%;
+         }
+         img {
+            height: 100%;
+            object-fit: cover;
+         }
+         &:hover {
+            img {
+               transform: scale(1.035) rotate(0.05deg);
+               transition: all 0.3s linear;
+            }
+         }
+      }
+   }
+}

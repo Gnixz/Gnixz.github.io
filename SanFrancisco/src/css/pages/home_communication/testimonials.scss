@@ -1,0 +1,84 @@
+.testimonials {
+  position: relative;
+  padding-top: 100px;
+  background-color: #323754;
+  @include breakpoint(991) {
+    padding-top: 50px;
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  &__content {
+    &-title {
+      color: white;
+      font-size: 28px;
+      margin: 20px 0 15px;
+      width: 70%;
+    }
+    .divider {
+      color: #00dadc;
+    }
+  }
+  &__box {
+    position: relative;
+    padding: 35px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.25), 0 0px 10px rgba(0, 0, 0, 0.22);
+    &-item {
+      text-align: center;
+      img {
+        width: auto;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+      }
+      .item__title {
+        font-size: 18px;
+        color: #0f66dc;
+        margin: 25px 0 30px;
+      }
+      .item__text {
+        font-style: italic;
+      }
+      .item__info {
+        margin-top: 0;
+        font-size: 14px;
+        color: #212529;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.testimonials .owl-testimonials {
+  position: relative;
+  transform: translateY(30%);
+}
+.testimonials .owl-item > .testimonials__box {
+  cursor: pointer;
+  margin: 80px 30px 40px;
+  transition: margin 0.4s ease;
+}
+.testimonials .owl-item.center > .testimonials__box {
+  cursor: pointer;
+  margin: 50px 30px 0;
+}
+.testimonials .owl-item:not(.center) > .testimonials__box:hover {
+  opacity: 0.9;
+}
+.testimonials .owl-carousel .owl-dots.disabled {
+  display: none;
+}

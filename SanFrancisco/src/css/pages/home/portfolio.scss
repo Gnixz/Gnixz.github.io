@@ -1,0 +1,42 @@
+.portfolio {
+  padding: 100px 0;
+  background-color: #e6f3fe;
+  @include breakpoint(991) {
+    padding: 50px 0;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+    &-heading {
+      font-size: 28px;
+      color: #212529;
+    }
+    &-text {
+      font-size: 18px;
+      margin-top: 45px;
+    }
+  }
+  &__content {
+    overflow: hidden;
+    margin: 0 -15px;
+    height: 600px;
+    background-color: #212529;
+    &-image {
+        height: 100%;
+      cursor: pointer;
+      img {
+          height: 100%;
+          object-fit: cover;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.035) rotate(0.05deg);
+        transition: all 0.3s linear;
+      }
+    }
+  }
+  &__button {
+      margin-top: 60px;
+  }
+}

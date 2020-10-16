@@ -1,0 +1,14 @@
+extends master.pug
+
+block css
+   link(rel='stylesheet' href='css/about.css')
+
+block content
+   include ./layouts/header.pug
+   include ./components/About/banner.pug
+   include ./components/About/about.pug
+   include ./components/About/services.pug
+   include ./components/About/portfolio.pug
+   include ./components/About/testimonials.pug
+   include ./components/About/contact.pug
+   include ./layouts/footer.pug

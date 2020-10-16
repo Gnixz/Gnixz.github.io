@@ -1,0 +1,25 @@
+.info {
+  &__box {
+    padding-right: 15px;
+    @include breakpoint(991) {
+      margin-top: 40px;
+    }
+    &-subtitle {
+      color: #212529;
+      font-size: 15px;
+    }
+    &-title {
+      color: #212529;
+      font-size: 22px;
+      margin: 15px 0;
+    }
+    .divider-full {
+      margin: 0;
+      height: 2px;
+      color: #9f9f9f;
+    }
+    span {
+      color: #0f66dc;
+    }
+  }
+}

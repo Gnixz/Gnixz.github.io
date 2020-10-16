@@ -1,0 +1,76 @@
+.consulting {
+  position: relative;
+  padding: 100px 0;
+  @include breakpoint(991) {
+    padding: 50px 0;
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__box {
+    cursor: pointer;
+    position: relative;
+    padding: 0 0 25px;
+    border-radius: 4px;
+    margin: 0 16px 16px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    &-item {
+      padding: 50px 35px 25px;
+      .item__title {
+        font-size: 28px;
+        color: white;
+        margin-bottom: 35px;
+      }
+      .item__text {
+        font-size: 18px;
+      }
+      a {
+        margin-top: 40px;
+      }
+      img {
+        height: 80px;
+        width: auto;
+      }
+      .item__heading {
+        font-size: 22px;
+        color: #212529;
+        margin: 25px 0;
+      }
+      @include breakpoint(768) {
+        text-align: center;
+        img {
+          margin: auto;
+        }
+      }
+    }
+    &:hover {
+      transform: translateY(-20px);
+      background-color: #0f66dc;
+      .consulting__box {
+        &-item {
+          position: relative;
+          background: linear-gradient(to right, #357bdb, #1167dc);
+          .item__heading {
+            color: white;
+          }
+          .item__text {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.box-shadow-none {
+  box-shadow: none;
+}

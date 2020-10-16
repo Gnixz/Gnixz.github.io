@@ -1,0 +1,73 @@
+.contact {
+  padding: 70px 0;
+  &__box {
+    transform: translateY(100%);
+    padding: 40px 80px;
+    background-color: #323754;
+    border-radius: 5px;
+    @include breakpoint(991) {
+      padding: 20px 60px;
+    }
+    @include breakpoint(575) {
+      padding: 0;
+      background-color: transparent;
+      transform: translateY(200%);
+    }
+    &-title {
+      @include breakpoint(991) {
+        margin-bottom: 15px;
+      }
+      @include breakpoint(575) {
+        display: none;
+      }
+      .title__heading {
+        color: white;
+        font-size: 28px;
+        font-weight: 300;
+        @include breakpoint(1199) {
+          font-size: 20px;
+        }
+      }
+      .title__text {
+        color: #acacac;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        img {
+          height: 22px;
+          width: auto;
+          margin-left: 10px;
+        }
+      }
+    }
+    &-mail {
+      .mail__title {
+        color: #adafbb;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+      input {
+        position: relative;
+        padding: 15px 30px;
+        border-radius: 40px;
+        background-color: #5b5f76;
+        border: 1px solid #5b5f76;
+        margin: 0;
+        @include breakpoint(575) {
+          padding: 12px 30px;
+        }
+        &:focus {
+          outline: none;
+          background-color: white;
+          color: #0f66dc;
+        }
+      }
+      a {
+        position: absolute;
+        top: 0;
+        right: 14px;
+      }
+    }
+  }
+}

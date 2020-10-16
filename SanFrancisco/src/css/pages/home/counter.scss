@@ -1,0 +1,29 @@
+.counter {
+  padding: 50px 0;
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+    &-heading {
+      font-size: 32px;
+      font-weight: 400;
+      @include breakpoint(1199) {
+        font-size: 28px;
+      }
+    }
+  }
+  &__content {
+    text-align: center;
+    @include breakpoint(991) {
+      margin-bottom: 15px;
+    }
+    span {
+      color: #0f66dc;
+      font-size: 60px;
+    }
+    &-heading {
+      color: #212529;
+      font-size: 18px;
+      margin: 10px 0 10px;
+    }
+  }
+}

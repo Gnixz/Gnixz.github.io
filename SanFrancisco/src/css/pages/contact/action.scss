@@ -1,0 +1,98 @@
+.action {
+  padding: 100px 0;
+  @include breakpoint(991) {
+    padding: 100px 0 50px;
+  }
+  @include breakpoint(767) {
+    padding: 50px 0;
+  }
+  &__box {
+    margin: 0 -15px;
+    position: relative;
+    cursor: pointer;
+    img {
+      position: absolute;
+      top: -28%;
+      right: -12%;
+      height: 106px;
+      width: 130px;
+      @include breakpoint(1199) {
+        display: none;
+      }
+    }
+    &-image {
+      width: 585px;
+      height: 250px;
+      position: relative;
+      padding: 45px 70px 45px 300px;
+      background-color: #edf5fc;
+      transform: scale(1);
+      @include breakpoint(767) {
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 45px;
+      }
+      &:hover {
+        transform: scale(1.01);
+      }
+      img {
+        display: block;
+        position: absolute;
+        top: -40%;
+        right: 0;
+        left: 0;
+        height: auto;
+        width: auto;
+        @include breakpoint(767) {
+          position: relative;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 30px;
+        }
+        @include breakpoint(330) {
+          left: auto;
+          right: 30px;
+        }
+      }
+      .image__content {
+        color: #212529;
+        margin-bottom: 25px;
+      }
+    }
+    &-content {
+      position: relative;
+      width: 585px;
+      height: 250px;
+      text-align: center;
+      padding: 40px 90px;
+      background-color: #323754;
+      transform: scale(1);
+      @include breakpoint(767) {
+        width: auto;
+        height: auto;
+      }
+      &:hover {
+        transform: scale(1.01);
+      }
+      .content__title {
+        color: white;
+        font-size: 28px;
+        font-weight: 300;
+      }
+      .content__text {
+        margin: 15px 0;
+        color: #acacac;
+        font-size: 15px;
+      }
+      a {
+        color: #5bd4f0;
+        font-size: 15px;
+        transition: .3s;
+        &:hover {
+          color: #48bf84;
+        }
+      }
+    }
+  }
+}

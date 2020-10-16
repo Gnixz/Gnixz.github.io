@@ -1,0 +1,15 @@
+.logos {
+  padding: 100px 0;
+  @include breakpoint(991) {
+    padding: 50px 0;
+  }
+  hr {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  img {
+    cursor: pointer;
+    display: block;
+    width: auto;
+  }
+}

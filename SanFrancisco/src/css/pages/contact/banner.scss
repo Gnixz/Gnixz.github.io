@@ -1,0 +1,47 @@
+.banner {
+  position: relative;
+  &__image {
+    position: relative;
+    height: 440px;
+    width: 100%;
+    background-color: #212529;
+    overflow: hidden;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &-title {
+      color: white;
+      font-size: 42px;
+      text-transform: capitalize;
+      margin-bottom: 25px;
+      @include breakpoint(991) {
+        font-size: 32px;
+      }
+      @include breakpoint(575) {
+        font-size: 22px;
+      }
+    }
+    &-text {
+      color: #cacaca;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      span {
+        color: white;
+        margin-right: 10px;
+        font-weight: 500;
+      }
+      @include breakpoint(575) {
+        font-size: 12px;
+      }
+    }
+  }
+}

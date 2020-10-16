@@ -1,0 +1,73 @@
+.contact {
+  padding: 170px 0 100px;
+  @include breakpoint(991) {
+    padding: 150px 0 50px;
+  }
+  &__title {
+    color: #212529;
+    font-size: 32px;
+    text-align: center;
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 30px;
+    transition: 0.8s;
+    border-radius: 160px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      border: 1px solid #e7e7e7;
+      box-shadow: 0 0px 12px rgba(0, 0, 0, 0.25), 0 0px 10px rgba(0, 0, 0, 0.22);
+      input {
+        width: 85%;
+        padding: 0;
+        padding-left: 30px;
+        @include breakpoint(767) {
+          width: 80%;
+        }
+      }
+    }
+    input {
+      position: relative;
+      border-radius: 160px;
+      padding: 0;
+      border: none;
+      outline: none;
+      margin: 0;
+      width: 0;
+      transition: 1s;
+      @include breakpoint(991) {
+        padding: 14px 30px;
+      }
+      @include breakpoint(575) {
+        padding: 12px 30px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &-title {
+      color: #adafbb;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+  }
+  &__text {
+    color: #acacac;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 22px;
+      width: auto;
+      margin-left: 10px;
+    }
+  }
+}

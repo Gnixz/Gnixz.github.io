@@ -1,0 +1,92 @@
+.services {
+  padding: 100px 0;
+  @include breakpoint(991) {
+    padding: 50px 0;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+    &-heading {
+      font-size: 28px;
+      color: #212529;
+    }
+    &-text {
+      font-size: 18px;
+      margin-top: 45px;
+    }
+  }
+  &__box {
+    position: relative;
+    padding: 45px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    @include breakpoint(575) {
+      padding: 25px;
+    }
+    &-item {
+      text-align: center;
+      img {
+        width: auto;
+        height: 80px;
+      }
+      .item__title {
+        margin: 30px 0 25px;
+        font-size: 22px;
+        color: #212529;
+      }
+      .item__text {
+        font-size: 18px;
+      }
+    }
+    &-button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      .button__icon {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        background: transparent;
+        z-index: 5;
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: transparent;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.services .owl-item > .services__box {
+  cursor: pointer;
+  margin: 40px 30px;
+  transition: margin 0.4s ease;
+}
+.services .owl-item.center > .services__box {
+  cursor: pointer;
+  margin: 10px 30px 0;
+  .services__box-button {
+    .button__icon {
+      background: #0f66dc;
+      i {
+        color: white;
+      }
+    }
+  }
+}
+.services .owl-item:not(.center) > .services__box:hover {
+  opacity: 0.75;
+}
