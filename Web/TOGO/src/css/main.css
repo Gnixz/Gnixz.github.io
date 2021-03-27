@@ -829,7 +829,7 @@ textarea:focus {
             line-height: 1.75em; } }
       .slider__item .container h1 {
         font-size: 75px;
-        color: red;
+        color: white;
         text-transform: uppercase;
         letter-spacing: 3px;
         margin-bottom: 20px; }
