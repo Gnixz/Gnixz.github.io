@@ -1,0 +1,219 @@
+// Start Home
+include ../../mixins/portfolio-item.pug
+include ../../mixins/home-modal.pug
+.home 
+  .home__background 
+    .home__background-scroll
+    .home__background-overlay 
+  .container 
+    .home__name 
+      .home__name-content 
+        h1 
+          span Xin Chào, Tôi Là
+          | Nguyễn Duy Hưng
+        ul.social 
+          li 
+            a(href="")
+              i.fab.fa-facebook-f  
+          li
+            a(href="")
+              i.fab.fa-twitter
+          li
+            a(href="")
+              i.fab.fa-google
+    .home__menu 
+      .home__menu-about.menu-block(data-target="about")
+        .about__content 
+          h2.menu-item Hồ Sơ
+      .home__menu-portfolio.menu-block(data-target="portfolio")
+        .portfolio__content 
+          h2.menu-item Sản Phẩm
+      .home__menu-blog.menu-block(data-target="rating")
+        .blog__content 
+          h2.menu-item Đánh Giá
+      .home__menu-contact.menu-block(data-target="contact")
+        .contact__content 
+          h2.menu-item Liên Hệ
+    .home__content#about
+      .home__content-block
+        .block__item
+          h3.block__item-title Hồ Sơ
+          p Tôi mong muốn được học hỏi, trau dồi thật nhiều kiến thức, nâng cao kĩ năng, phát triển bản thân để trở thành một 
+            strong Lập trình viên Front End chuyên nghiệp.
+          a(href="https://www.topcv.vn/xem-cv/a94c741441f7ef3973873031c98dbe72" target="_blank")
+            i.fas.fa-long-arrow-alt-right
+            | CV Online 
+          .block__item-info.row
+            .col-sm-6.px-0
+              span Họ tên : 
+              |  Nguyễn Duy Hưng
+            .col-sm-6.px-0
+              span Ngày sinh : 
+              |  09 / 03 / 1996
+            .col-sm-6.px-0
+              span Địa chỉ : 
+              |  Số 20 Ngõ 77 Phố Lãng Yên, Phường Thanh Lương, Quận Hai Bà Trưng, Hà Nội
+            .col-sm-6.px-0
+              span Email : 
+              |  hung.nd192@gmail.com
+            .col-sm-6.px-0
+              span Điện thoại : 
+              |  0394282567
+            .col-sm-6.px-0
+              span Ứng tuyển : 
+              |  Fresher Front End
+        .block__item 
+          h3.block__item-title Kỹ Năng
+          ul.block__item-list 
+            li - HTML, CSS,  SASS, GULPJS, PUGJS (Bootstrap)
+            li - JavaScript (Jquery)
+            li - Git (Github, Gitlab)
+        .block__item 
+          h3.block__item-title Học Vấn 
+          .block__item-education
+            i.fas.fa-graduation-cap
+            .row 
+              .col-md-12 
+                .education__box 
+                  .education__box-item 
+                    .item__title
+                      h4 Đại Học Bách Khoa Hà Nội | 
+                        span Sinh Viên
+                      h5 08 / 2014 - 06 / 2018
+                      p
+                        | - Sinh viên Đại Học Bách Khoa Hà Nội
+                        br
+                        | - Tốt nghiệp loại: Khá
+                  .education__box-item 
+                    .item__title
+                      h4 Học viện Đào tạo Oncode | 
+                        span Thực Tập
+                      h5 08 / 2020 - 01 / 2021
+                      p
+                        | - Học Lập trình Web Front End
+        .block__item 
+          h3.block__item-title Ưu - Nhược Điểm
+          .block__item-education
+            i.fas.fa-pencil-alt
+            .row 
+              .col-md-12 
+                .education__box 
+                  .education__box-item 
+                    .item__title
+                      h4 Ưu Điểm
+                      p
+                        | - Thường xuyên trau dồi ý tưởng lập trình thông qua các blog, website như viblo.asia, codepen.io, stackoverflow.com, ...
+                        br
+                        | - Hay tìm tòi các website trên themeforest.net, themes.muffingroup.com,... để học hỏi, cắt lại giao diện, tìm hiểu thêm về các hiệu ứng để code website được đẹp hơn thu hút khách hàng.
+                        br
+                        | - Tập trung, có tinh thần trách nhiệm cao trong công việc.
+                        br
+                        | - Hòa đồng, thân thiện, nhiệt tình.
+                  .education__box-item 
+                    .item__title
+                      h4 Nhược Điểm
+                      p
+                        | - Ít kinh nghiệm làm việc với dự án thực tế.
+        .row
+          .col-md-12.text-center.email
+            a.btn(href="#") hung.nd192@gmail.com 
+    .home__content#portfolio 
+      .home__content-block 
+        .block__item 
+          h3.block__item-title Sản Phẩm
+          .row 
+            .col-md-12
+              .filters 
+                span Bộ lọc :
+                ul#filters 
+                  li.active(data-filter="*") Tất cả
+                  li(data-filter=".website") Website
+                  li(data-filter=".psd") PSD
+              .portfolio__box.row.isotope#portfolio__box
+                +portfolio-item("outstock", "OUTSTOCK", "images/layouts/portfolio-01.jpg")(class="website")
+                +portfolio-item("sanfrancisco", "SANFRANCISCO", "images/layouts/portfolio-02.jpg")(class="psd")
+                +portfolio-item("togo", "TOGO", "images/layouts/portfolio-03.jpg")(class="website")
+                +portfolio-item("aavi", "AAVI", "images/layouts/portfolio-04.jpg")(class="website")
+                +portfolio-item("linoor", "LINOOR", "images/layouts/portfolio-05.jpg")(class="website")
+                +portfolio-item("detach", "DETACH", "images/layouts/portfolio-06.jpg")(class="psd")
+                +portfolio-item("dolatrix", "DOLATRIX", "images/layouts/portfolio-07.jpg")(class="website")
+    .home__content#rating
+      .home__content-block 
+        .block__item 
+          h3.block__item-title Đánh Giá
+          .row 
+            .col-12 
+              .star
+                label.star-toggle
+                  input(type='checkbox' checked='')
+                  .icon
+                    .star
+                      .eye
+                label.star-toggle
+                  input(type='checkbox' checked='')
+                  .icon
+                    .star
+                      .eye
+                label.star-toggle
+                  input(type='checkbox' checked='')
+                  .icon
+                    .star
+                      .eye
+                label.star-toggle
+                  input(type='checkbox' checked='')
+                  .icon
+                    .star
+                      .eye
+                label.star-toggle
+                  input(type='checkbox')
+                  .icon
+                    .star
+                      .eye
+              .thank-you 
+                img.mx-auto(src="images/layouts/thank-you.png" alt="thank-you")
+    .home__content#contact 
+      .home__content-block 
+        .block__item
+          h3.block__item-title Liên Hệ
+          .row 
+            .col-md-6 
+              form(action="")
+                .form-control-wrap
+                  .form-group 
+                    input.form-control(type="text" placeholder="Name*") 
+                  .form-group 
+                    input.form-control(type="email" placeholder="Email*") 
+                  .form-group 
+                    textarea.form-control(placeholder="Message*" rows="7")
+                  .form-group 
+                    button.btn(type="submit") Send Message
+            .col-md-6 
+              .contact__box
+                .contact__box-icon 
+                  i.fal.fa-map-marker-alt
+                .contact__box-details 
+                  h5 Địa Chỉ
+                  p 20 Phố Lãng Yên, Hai Bà Trưng, Hà Nội
+              .contact__box
+                .contact__box-icon 
+                  i.fal.fa-phone-alt
+                .contact__box-details 
+                  h5 Điện Thoại
+                  p 0394282567
+              .contact__box
+                .contact__box-icon 
+                  i.fal.fa-envelope
+                .contact__box-details 
+                  h5 Email
+                  p hung.nd192@gmail.com
+            .col-md-12 
+              .map 
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.613563906854!2d105.86348011541479!3d21.0081220938573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf849ced337%3A0x14dd09754fa7454d!2zTmfDtSA3NyBMw6NuZyBZw6puLCBUaGFuaCBMxrDGoW5nLCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1604567241277!5m2!1sen!2s' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+    +home-modal('Outstock', 'Website', '4 ngày', 'HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl carousel, Nivo Slider,...', 'http://themepure.net/template/outstock-prv/outstock/index.html', 'https://outstock.netlify.app/')(id="outstock")
+    +home-modal('SanFrancisco', 'PSD', '3,5 ngày', 'HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel, Wow JS, FancyBox', ' ', 'https://gnixz.github.io/SanFrancisco/src/index.html')(id="sanfrancisco")
+    +home-modal('TOGO', 'Website', '3,5 ngày', 'HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel,...', 'http://webredox.net/demo/wp/togo/dark/demo2/', 'https://togo-dark.netlify.app/')(id="togo")
+    +home-modal('Aavi', 'Website', '5 ngày', 'HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: VenoBox, Swiper JS, Wow JS, ...', 'https://aaviapp.uiexpertin.com/index.html', 'https://aavi.netlify.app/')(id="aavi")
+    +home-modal('Linoor', 'Website', '4 ngày', 'HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel, FancyBox, Isotope,...', 'https://linoor-nuxt.netlify.app/', 'https://linoor.netlify.app/')(id="linoor")
+    +home-modal('Detach', 'PSD', '1,5 ngày', 'HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl carousel, Isotope, FancyBox,...', ' ', 'https://gnixz.github.io/Detach/')(id="detach")
+    +home-modal('Dolatrix', 'Website', '3 ngày', 'HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel, Wow JS,...', 'https://dolatrix.netlify.app/index-demo-1.html', 'https://dolatrix-demo.netlify.app/')(id="dolatrix")
+// End Home

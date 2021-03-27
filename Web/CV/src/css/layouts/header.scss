@@ -1,0 +1,61 @@
+// Start Header
+.header {
+  background: #f1f3f6;
+  position: fixed;
+  height: 40px;
+  width: 70%;
+  right: 0;
+  top: -50px;
+  transition: all 0.5s;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint(800) {
+    font-size: 14px;
+    width: 100%;
+    left: 0;
+  }
+  &.show {
+    top: 0;
+  }
+  span {
+    @include breakpoint(374) {
+      display: none;
+    }
+  }
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    @include breakpoint(980) {
+      margin-top: 5px;
+    }
+    @include breakpoint(374) {
+      margin: 5px 10px 0;
+    }
+    &-item {
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 600;
+      line-height: 40px;
+      margin-top: -5px;
+      padding: 0 15px;
+      color: #666;
+      @include breakpoint(1024) {
+        padding: 0 10px;
+      }
+      @include breakpoint(767) {
+        padding: 0 5px;
+      }
+      &.active {
+        color: #333;
+      }
+      i {
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+// End Header

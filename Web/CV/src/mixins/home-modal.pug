@@ -1,0 +1,31 @@
+mixin home-modal(name, cate, time, lang, demo, product)
+  .home__modal.pop&attributes(attributes)
+    .close-pop#close-pop
+      | Close 
+      i.fal.fa-times
+    .home__modal-block 
+      .block__item 
+        h3.block__item-title Chi tiết Sản Phẩm
+        .block__item-tags
+          span Solo Code
+        .block__item-tags
+          span Trang : 
+          .name= name
+        .block__item-tags
+          span Thể Loại : 
+          .cate= cate
+        .block__item-tags
+          span Thời Gian Hoàn Thành : 
+          .time= time
+        .block__item-tags
+          span Công Cụ & Ngôn Ngữ Sử Dụng : 
+          .lang= lang
+        .block__item-tags
+          span DEMO : 
+          a.demo(href= demo target="_blank") Link
+        .block__item-tags
+          span Sản Phẩm : 
+          a.product(href= product target="_blank") Link
+      .row
+        .col-md-12.text-center.email
+          a.btn(href="#") hung.nd192@gmail.com 

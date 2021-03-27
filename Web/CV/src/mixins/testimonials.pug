@@ -1,0 +1,34 @@
+mixin testimonials
+  include ../mixins/title.pug
+  .testimonials
+    .container
+      .row
+        +title('Testimonials')
+      .owl-testimonials.owl-carousel.owl-theme.animate__animated.animate__zoomIn.wow(data-wow-delay="0.5s")
+        .testimonials__box
+          .testimonials__box-item
+            p.item__text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium natus error sit volu ptatem omnis. Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium.
+            .item__info
+              .item__info-image
+                img(src="images/layouts/testimonials-1.jpg", alt="")
+              .item__info-content
+                .content__name Sara Newman
+                .content__position Manager
+        .testimonials__box
+          .testimonials__box-item
+            p.item__text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium natus error sit volu ptatem omnis. Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium.
+            .item__info
+              .item__info-image
+                img(src="images/layouts/testimonials-2.jpg", alt="")
+              .item__info-content
+                .content__name James Newbie
+                .content__position Docter
+        .testimonials__box
+          .testimonials__box-item
+            p.item__text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium natus error sit volu ptatem omnis. Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium.
+            .item__info
+              .item__info-image
+                img(src="images/layouts/testimonials-3.jpg", alt="")
+              .item__info-content
+                .content__name David Harrison
+                .content__position Artist

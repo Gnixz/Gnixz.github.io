@@ -1,0 +1,11 @@
+mixin portfolio-item(target, title, src)
+  .portfolio__box-item.col-md-4.col-sm-6&attributes(attributes)
+    .open-project(data-target= target)
+      .item__column 
+        .item__column-hover 
+          .hover__content 
+            h2= title
+            hr
+            p View details.
+          .hover__overlay 
+        img(src= src alt="portfolio")

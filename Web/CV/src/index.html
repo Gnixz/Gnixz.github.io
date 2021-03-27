@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layouts/favicon.ico">
+    <!-- Bootstrap Css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Fancy Box-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Link Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Wow JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <!-- Style Css-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>CV - Nguyễn Duy Hưng</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Start Header-->
+      <div class="header"> <span> </span>
+        <ul class="header__list"> 
+          <li class="header__list-item" data-target="about">Hồ Sơ</li>
+          <li class="header__list-item" data-target="portfolio">Sản Phẩm</li>
+          <li class="header__list-item" data-target="rating">Đánh Giá</li>
+          <li class="header__list-item" data-target="contact">Liên Hệ</li>
+          <li class="header__list-item" id="close"> <i class="fal fa-times"></i></li>
+        </ul>
+      </div>
+      <!-- End Header-->
+      <!-- Start Home-->
+      <div class="home"> 
+        <div class="home__background"> 
+          <div class="home__background-scroll"></div>
+          <div class="home__background-overlay"> </div>
+        </div>
+        <div class="container"> 
+          <div class="home__name"> 
+            <div class="home__name-content"> 
+              <h1> <span>Xin Chào, Tôi Là</span>Nguyễn Duy Hưng</h1>
+              <ul class="social"> 
+                <li> <a href=""><i class="fab fa-facebook-f"> </i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-google"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="home__menu"> 
+            <div class="home__menu-about menu-block" data-target="about">
+              <div class="about__content"> 
+                <h2 class="menu-item">Hồ Sơ</h2>
+              </div>
+            </div>
+            <div class="home__menu-portfolio menu-block" data-target="portfolio">
+              <div class="portfolio__content"> 
+                <h2 class="menu-item">Sản Phẩm</h2>
+              </div>
+            </div>
+            <div class="home__menu-blog menu-block" data-target="rating">
+              <div class="blog__content"> 
+                <h2 class="menu-item">Đánh Giá</h2>
+              </div>
+            </div>
+            <div class="home__menu-contact menu-block" data-target="contact">
+              <div class="contact__content"> 
+                <h2 class="menu-item">Liên Hệ</h2>
+              </div>
+            </div>
+          </div>
+          <div class="home__content" id="about">
+            <div class="home__content-block">
+              <div class="block__item">
+                <h3 class="block__item-title">Hồ Sơ</h3>
+                <p>Tôi mong muốn được học hỏi, trau dồi thật nhiều kiến thức, nâng cao kĩ năng, phát triển bản thân để trở thành một <strong>Lập trình viên Front End chuyên nghiệp.</strong></p><a href="https://www.topcv.vn/xem-cv/a94c741441f7ef3973873031c98dbe72" target="_blank"><i class="fas fa-long-arrow-alt-right"></i>CV Online </a>
+                <div class="block__item-info row">
+                  <div class="col-sm-6 px-0"><span>Họ tên : </span> Nguyễn Duy Hưng</div>
+                  <div class="col-sm-6 px-0"><span>Ngày sinh : </span> 09 / 03 / 1996</div>
+                  <div class="col-sm-6 px-0"><span>Địa chỉ : </span> Số 20 Ngõ 77 Phố Lãng Yên, Phường Thanh Lương, Quận Hai Bà Trưng, Hà Nội</div>
+                  <div class="col-sm-6 px-0"><span>Email : </span> hung.nd192@gmail.com</div>
+                  <div class="col-sm-6 px-0"><span>Điện thoại : </span> 0394282567</div>
+                  <div class="col-sm-6 px-0"><span>Ứng tuyển : </span> Fresher Front End</div>
+                </div>
+              </div>
+              <div class="block__item"> 
+                <h3 class="block__item-title">Kỹ Năng</h3>
+                <ul class="block__item-list"> 
+                  <li>- HTML, CSS,  SASS, GULPJS, PUGJS (Bootstrap)</li>
+                  <li>- JavaScript (Jquery)</li>
+                  <li>- Git (Github, Gitlab)</li>
+                </ul>
+              </div>
+              <div class="block__item"> 
+                <h3 class="block__item-title">Học Vấn </h3>
+                <div class="block__item-education"><i class="fas fa-graduation-cap"></i>
+                  <div class="row"> 
+                    <div class="col-md-12"> 
+                      <div class="education__box"> 
+                        <div class="education__box-item"> 
+                          <div class="item__title">
+                            <h4>Đại Học Bách Khoa Hà Nội | <span>Sinh Viên</span></h4>
+                            <h5>08 / 2014 - 06 / 2018</h5>
+                            <p>- Sinh viên Đại Học Bách Khoa Hà Nội<br>- Tốt nghiệp loại: Khá</p>
+                          </div>
+                        </div>
+                        <div class="education__box-item"> 
+                          <div class="item__title">
+                            <h4>Học viện Đào tạo Oncode | <span>Thực Tập</span></h4>
+                            <h5>08 / 2020 - 01 / 2021</h5>
+                            <p>- Học Lập trình Web Front End</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block__item"> 
+                <h3 class="block__item-title">Ưu - Nhược Điểm</h3>
+                <div class="block__item-education"><i class="fas fa-pencil-alt"></i>
+                  <div class="row"> 
+                    <div class="col-md-12"> 
+                      <div class="education__box"> 
+                        <div class="education__box-item"> 
+                          <div class="item__title">
+                            <h4>Ưu Điểm</h4>
+                            <p>- Thường xuyên trau dồi ý tưởng lập trình thông qua các blog, website như viblo.asia, codepen.io, stackoverflow.com, ...<br>- Hay tìm tòi các website trên themeforest.net, themes.muffingroup.com,... để học hỏi, cắt lại giao diện, tìm hiểu thêm về các hiệu ứng để code website được đẹp hơn thu hút khách hàng.<br>- Tập trung, có tinh thần trách nhiệm cao trong công việc.<br>- Hòa đồng, thân thiện, nhiệt tình.</p>
+                          </div>
+                        </div>
+                        <div class="education__box-item"> 
+                          <div class="item__title">
+                            <h4>Nhược Điểm</h4>
+                            <p>- Ít kinh nghiệm làm việc với dự án thực tế.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="home__content" id="portfolio"> 
+            <div class="home__content-block"> 
+              <div class="block__item"> 
+                <h3 class="block__item-title">Sản Phẩm</h3>
+                <div class="row"> 
+                  <div class="col-md-12">
+                    <div class="filters"> <span>Bộ lọc :</span>
+                      <ul id="filters"> 
+                        <li class="active" data-filter="*">Tất cả</li>
+                        <li data-filter=".website">Website</li>
+                        <li data-filter=".psd">PSD</li>
+                      </ul>
+                    </div>
+                    <div class="portfolio__box row isotope" id="portfolio__box">
+                            <div class="portfolio__box-item col-md-4 col-sm-6 website">
+                              <div class="open-project" data-target="outstock">
+                                <div class="item__column"> 
+                                  <div class="item__column-hover"> 
+                                    <div class="hover__content"> 
+                                      <h2>OUTSTOCK</h2>
+                                      <hr>
+                                      <p>View details.</p>
+                                    </div>
+                                    <div class="hover__overlay"> </div>
+                                  </div><img src="images/layouts/portfolio-01.jpg" alt="portfolio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="portfolio__box-item col-md-4 col-sm-6 psd">
+                              <div class="open-project" data-target="sanfrancisco">
+                                <div class="item__column"> 
+                                  <div class="item__column-hover"> 
+                                    <div class="hover__content"> 
+                                      <h2>SANFRANCISCO</h2>
+                                      <hr>
+                                      <p>View details.</p>
+                                    </div>
+                                    <div class="hover__overlay"> </div>
+                                  </div><img src="images/layouts/portfolio-02.jpg" alt="portfolio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="portfolio__box-item col-md-4 col-sm-6 website">
+                              <div class="open-project" data-target="togo">
+                                <div class="item__column"> 
+                                  <div class="item__column-hover"> 
+                                    <div class="hover__content"> 
+                                      <h2>TOGO</h2>
+                                      <hr>
+                                      <p>View details.</p>
+                                    </div>
+                                    <div class="hover__overlay"> </div>
+                                  </div><img src="images/layouts/portfolio-03.jpg" alt="portfolio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="portfolio__box-item col-md-4 col-sm-6 website">
+                              <div class="open-project" data-target="aavi">
+                                <div class="item__column"> 
+                                  <div class="item__column-hover"> 
+                                    <div class="hover__content"> 
+                                      <h2>AAVI</h2>
+                                      <hr>
+                                      <p>View details.</p>
+                                    </div>
+                                    <div class="hover__overlay"> </div>
+                                  </div><img src="images/layouts/portfolio-04.jpg" alt="portfolio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="portfolio__box-item col-md-4 col-sm-6 website">
+                              <div class="open-project" data-target="linoor">
+                                <div class="item__column"> 
+                                  <div class="item__column-hover"> 
+                                    <div class="hover__content"> 
+                                      <h2>LINOOR</h2>
+                                      <hr>
+                                      <p>View details.</p>
+                                    </div>
+                                    <div class="hover__overlay"> </div>
+                                  </div><img src="images/layouts/portfolio-05.jpg" alt="portfolio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="portfolio__box-item col-md-4 col-sm-6 psd">
+                              <div class="open-project" data-target="detach">
+                                <div class="item__column"> 
+                                  <div class="item__column-hover"> 
+                                    <div class="hover__content"> 
+                                      <h2>DETACH</h2>
+                                      <hr>
+                                      <p>View details.</p>
+                                    </div>
+                                    <div class="hover__overlay"> </div>
+                                  </div><img src="images/layouts/portfolio-06.jpg" alt="portfolio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="portfolio__box-item col-md-4 col-sm-6 website">
+                              <div class="open-project" data-target="dolatrix">
+                                <div class="item__column"> 
+                                  <div class="item__column-hover"> 
+                                    <div class="hover__content"> 
+                                      <h2>DOLATRIX</h2>
+                                      <hr>
+                                      <p>View details.</p>
+                                    </div>
+                                    <div class="hover__overlay"> </div>
+                                  </div><img src="images/layouts/portfolio-07.jpg" alt="portfolio">
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home__content" id="rating">
+            <div class="home__content-block"> 
+              <div class="block__item"> 
+                <h3 class="block__item-title">Đánh Giá</h3>
+                <div class="row"> 
+                  <div class="col-12"> 
+                    <div class="star">
+                      <label class="star-toggle">
+                        <input type="checkbox" checked="">
+                        <div class="icon">
+                          <div class="star">
+                            <div class="eye"></div>
+                          </div>
+                        </div>
+                      </label>
+                      <label class="star-toggle">
+                        <input type="checkbox" checked="">
+                        <div class="icon">
+                          <div class="star">
+                            <div class="eye"></div>
+                          </div>
+                        </div>
+                      </label>
+                      <label class="star-toggle">
+                        <input type="checkbox" checked="">
+                        <div class="icon">
+                          <div class="star">
+                            <div class="eye"></div>
+                          </div>
+                        </div>
+                      </label>
+                      <label class="star-toggle">
+                        <input type="checkbox" checked="">
+                        <div class="icon">
+                          <div class="star">
+                            <div class="eye"></div>
+                          </div>
+                        </div>
+                      </label>
+                      <label class="star-toggle">
+                        <input type="checkbox">
+                        <div class="icon">
+                          <div class="star">
+                            <div class="eye"></div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="thank-you"> <img class="mx-auto" src="images/layouts/thank-you.png" alt="thank-you"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home__content" id="contact"> 
+            <div class="home__content-block"> 
+              <div class="block__item">
+                <h3 class="block__item-title">Liên Hệ</h3>
+                <div class="row"> 
+                  <div class="col-md-6"> 
+                    <form action="">
+                      <div class="form-control-wrap">
+                        <div class="form-group"> 
+                          <input class="form-control" type="text" placeholder="Name*">
+                        </div>
+                        <div class="form-group"> 
+                          <input class="form-control" type="email" placeholder="Email*">
+                        </div>
+                        <div class="form-group"> 
+                          <textarea class="form-control" placeholder="Message*" rows="7"></textarea>
+                        </div>
+                        <div class="form-group"> 
+                          <button class="btn" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6"> 
+                    <div class="contact__box">
+                      <div class="contact__box-icon"> <i class="fal fa-map-marker-alt"></i></div>
+                      <div class="contact__box-details"> 
+                        <h5>Địa Chỉ</h5>
+                        <p>20 Phố Lãng Yên, Hai Bà Trưng, Hà Nội</p>
+                      </div>
+                    </div>
+                    <div class="contact__box">
+                      <div class="contact__box-icon"> <i class="fal fa-phone-alt"></i></div>
+                      <div class="contact__box-details"> 
+                        <h5>Điện Thoại</h5>
+                        <p>0394282567</p>
+                      </div>
+                    </div>
+                    <div class="contact__box">
+                      <div class="contact__box-icon"> <i class="fal fa-envelope"></i></div>
+                      <div class="contact__box-details"> 
+                        <h5>Email</h5>
+                        <p>hung.nd192@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12"> 
+                    <div class="map"> 
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.613563906854!2d105.86348011541479!3d21.0081220938573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf849ced337%3A0x14dd09754fa7454d!2zTmfDtSA3NyBMw6NuZyBZw6puLCBUaGFuaCBMxrDGoW5nLCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1604567241277!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class="home__modal pop" id="outstock">
+                  <div class="close-pop" id="close-pop">Close <i class="fal fa-times"></i></div>
+                  <div class="home__modal-block"> 
+                    <div class="block__item"> 
+                      <h3 class="block__item-title">Chi tiết Sản Phẩm</h3>
+                      <div class="block__item-tags"><span>Solo Code</span></div>
+                      <div class="block__item-tags"><span>Trang : </span>
+                        <div class="name">Outstock</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thể Loại : </span>
+                        <div class="cate">Website</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thời Gian Hoàn Thành : </span>
+                        <div class="time">4 ngày</div>
+                      </div>
+                      <div class="block__item-tags"><span>Công Cụ & Ngôn Ngữ Sử Dụng : </span>
+                        <div class="lang">HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl carousel, Nivo Slider,...</div>
+                      </div>
+                      <div class="block__item-tags"><span>DEMO : </span><a class="demo" href="http://themepure.net/template/outstock-prv/outstock/index.html" target="_blank">Link</a></div>
+                      <div class="block__item-tags"><span>Sản Phẩm : </span><a class="product" href="https://outstock.netlify.app/" target="_blank">Link</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home__modal pop" id="sanfrancisco">
+                  <div class="close-pop" id="close-pop">Close <i class="fal fa-times"></i></div>
+                  <div class="home__modal-block"> 
+                    <div class="block__item"> 
+                      <h3 class="block__item-title">Chi tiết Sản Phẩm</h3>
+                      <div class="block__item-tags"><span>Solo Code</span></div>
+                      <div class="block__item-tags"><span>Trang : </span>
+                        <div class="name">SanFrancisco</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thể Loại : </span>
+                        <div class="cate">PSD</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thời Gian Hoàn Thành : </span>
+                        <div class="time">3,5 ngày</div>
+                      </div>
+                      <div class="block__item-tags"><span>Công Cụ & Ngôn Ngữ Sử Dụng : </span>
+                        <div class="lang">HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel, Wow JS, FancyBox</div>
+                      </div>
+                      <div class="block__item-tags"><span>DEMO : </span><a class="demo" href=" " target="_blank">Link</a></div>
+                      <div class="block__item-tags"><span>Sản Phẩm : </span><a class="product" href="https://gnixz.github.io/SanFrancisco/src/index.html" target="_blank">Link</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home__modal pop" id="togo">
+                  <div class="close-pop" id="close-pop">Close <i class="fal fa-times"></i></div>
+                  <div class="home__modal-block"> 
+                    <div class="block__item"> 
+                      <h3 class="block__item-title">Chi tiết Sản Phẩm</h3>
+                      <div class="block__item-tags"><span>Solo Code</span></div>
+                      <div class="block__item-tags"><span>Trang : </span>
+                        <div class="name">TOGO</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thể Loại : </span>
+                        <div class="cate">Website</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thời Gian Hoàn Thành : </span>
+                        <div class="time">3,5 ngày</div>
+                      </div>
+                      <div class="block__item-tags"><span>Công Cụ & Ngôn Ngữ Sử Dụng : </span>
+                        <div class="lang">HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel,...</div>
+                      </div>
+                      <div class="block__item-tags"><span>DEMO : </span><a class="demo" href="http://webredox.net/demo/wp/togo/dark/demo2/" target="_blank">Link</a></div>
+                      <div class="block__item-tags"><span>Sản Phẩm : </span><a class="product" href="https://togo-dark.netlify.app/" target="_blank">Link</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home__modal pop" id="aavi">
+                  <div class="close-pop" id="close-pop">Close <i class="fal fa-times"></i></div>
+                  <div class="home__modal-block"> 
+                    <div class="block__item"> 
+                      <h3 class="block__item-title">Chi tiết Sản Phẩm</h3>
+                      <div class="block__item-tags"><span>Solo Code</span></div>
+                      <div class="block__item-tags"><span>Trang : </span>
+                        <div class="name">Aavi</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thể Loại : </span>
+                        <div class="cate">Website</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thời Gian Hoàn Thành : </span>
+                        <div class="time">5 ngày</div>
+                      </div>
+                      <div class="block__item-tags"><span>Công Cụ & Ngôn Ngữ Sử Dụng : </span>
+                        <div class="lang">HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: VenoBox, Swiper JS, Wow JS, ...</div>
+                      </div>
+                      <div class="block__item-tags"><span>DEMO : </span><a class="demo" href="https://aaviapp.uiexpertin.com/index.html" target="_blank">Link</a></div>
+                      <div class="block__item-tags"><span>Sản Phẩm : </span><a class="product" href="https://aavi.netlify.app/" target="_blank">Link</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home__modal pop" id="linoor">
+                  <div class="close-pop" id="close-pop">Close <i class="fal fa-times"></i></div>
+                  <div class="home__modal-block"> 
+                    <div class="block__item"> 
+                      <h3 class="block__item-title">Chi tiết Sản Phẩm</h3>
+                      <div class="block__item-tags"><span>Solo Code</span></div>
+                      <div class="block__item-tags"><span>Trang : </span>
+                        <div class="name">Linoor</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thể Loại : </span>
+                        <div class="cate">Website</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thời Gian Hoàn Thành : </span>
+                        <div class="time">4 ngày</div>
+                      </div>
+                      <div class="block__item-tags"><span>Công Cụ & Ngôn Ngữ Sử Dụng : </span>
+                        <div class="lang">HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel, FancyBox, Isotope,...</div>
+                      </div>
+                      <div class="block__item-tags"><span>DEMO : </span><a class="demo" href="https://linoor-nuxt.netlify.app/" target="_blank">Link</a></div>
+                      <div class="block__item-tags"><span>Sản Phẩm : </span><a class="product" href="https://linoor.netlify.app/" target="_blank">Link</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home__modal pop" id="detach">
+                  <div class="close-pop" id="close-pop">Close <i class="fal fa-times"></i></div>
+                  <div class="home__modal-block"> 
+                    <div class="block__item"> 
+                      <h3 class="block__item-title">Chi tiết Sản Phẩm</h3>
+                      <div class="block__item-tags"><span>Solo Code</span></div>
+                      <div class="block__item-tags"><span>Trang : </span>
+                        <div class="name">Detach</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thể Loại : </span>
+                        <div class="cate">PSD</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thời Gian Hoàn Thành : </span>
+                        <div class="time">1,5 ngày</div>
+                      </div>
+                      <div class="block__item-tags"><span>Công Cụ & Ngôn Ngữ Sử Dụng : </span>
+                        <div class="lang">HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl carousel, Isotope, FancyBox,...</div>
+                      </div>
+                      <div class="block__item-tags"><span>DEMO : </span><a class="demo" href=" " target="_blank">Link</a></div>
+                      <div class="block__item-tags"><span>Sản Phẩm : </span><a class="product" href="https://gnixz.github.io/Detach/" target="_blank">Link</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home__modal pop" id="dolatrix">
+                  <div class="close-pop" id="close-pop">Close <i class="fal fa-times"></i></div>
+                  <div class="home__modal-block"> 
+                    <div class="block__item"> 
+                      <h3 class="block__item-title">Chi tiết Sản Phẩm</h3>
+                      <div class="block__item-tags"><span>Solo Code</span></div>
+                      <div class="block__item-tags"><span>Trang : </span>
+                        <div class="name">Dolatrix</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thể Loại : </span>
+                        <div class="cate">Website</div>
+                      </div>
+                      <div class="block__item-tags"><span>Thời Gian Hoàn Thành : </span>
+                        <div class="time">3 ngày</div>
+                      </div>
+                      <div class="block__item-tags"><span>Công Cụ & Ngôn Ngữ Sử Dụng : </span>
+                        <div class="lang">HTML, CSS, Bootstrap, Jquery, SASS, Gulp JS, Pug JS và một số thư viện Javascipt khác như: Owl Carousel, Wow JS,...</div>
+                      </div>
+                      <div class="block__item-tags"><span>DEMO : </span><a class="demo" href="https://dolatrix.netlify.app/index-demo-1.html" target="_blank">Link</a></div>
+                      <div class="block__item-tags"><span>Sản Phẩm : </span><a class="product" href="https://dolatrix-demo.netlify.app/" target="_blank">Link</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center email"><a class="btn" href="#">hung.nd192@gmail.com </a></div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+      <!-- End Home-->
+      <!-- Start Back-to-top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="far fa-angle-up"></i></a></div>
+      <!-- End Back-to-top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancy Box-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Wow JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Isotope-->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <!-- GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"> </script>
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

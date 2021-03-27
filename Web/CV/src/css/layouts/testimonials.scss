@@ -1,0 +1,92 @@
+// Start Testimonials
+.testimonials {
+  position: relative;
+  padding: 60px 0;
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &__box {
+    position: relative;
+    padding: 50px 30px;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 4px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    &-item {
+      .item__text {
+        margin: 0 0 15px;
+      }
+      .item__info {
+        position: relative;
+        padding-left: 100px;
+        &-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &-content {
+          padding-top: 20px;
+          white-space: nowrap;
+          @include breakpoint(424) {
+            white-space: unset;
+            padding-top: 0;
+          }
+          .content__name {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 23px;
+            color: #292929;
+          }
+          .content__position {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #808285;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials .owl-carousel .owl-dots .owl-dot span {
+  height: 10px;
+  width: 15px;
+  background-color: #c1c0bf;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.testimonials .owl-carousel .owl-dots .owl-dot.active span {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffcc43;
+}
+.testimonials .owl-carousel .owl-dots.disabled {
+  display: block;
+}
+.testimonials .owl-item > .testimonials__box {
+  margin: 40px 30px;
+  transition: margin 0.4s ease;
+}
+.testimonials .owl-item.center > .testimonials__box {
+  margin: 10px 30px 0;
+  background-color: #ffcc43;
+  color: white;
+  .testimonials__box-item {
+    .item__info {
+      &-content {
+        .content__position {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.testimonials .owl-item:not(.center) > .testimonials__box:hover {
+  opacity: 0.75;
+}
+// End Testimonials
