@@ -1,0 +1,17 @@
+mixin blog-item(src, b, date, title, p)
+  .blog__item
+    .blog__item-image
+      a(href="blog-details.html")
+        img(src= src, alt="blog")
+    .blog__item-content
+      .content__info
+        b
+          a(href="#")= b
+          |  | 
+        span= date
+      h6
+        a(href="blog-details.html")= title
+      p= p
+      a.btn(href="blog-details.html")
+        span Read More
+          i.ti-arrow-right

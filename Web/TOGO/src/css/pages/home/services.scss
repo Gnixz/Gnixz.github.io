@@ -1,0 +1,73 @@
+// Start Services
+.services {
+  position: relative;
+  padding: 100px 0 20px;
+  &__item {
+    margin-bottom: 40px;
+    &-image {
+      padding: 40px 20px;
+      position: relative;
+      background-size: cover;
+      background-position: 50% 0%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(12, 12, 12, 0.5);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #292929;
+        z-index: 1;
+        transition: all 0.4s;
+      }
+      .image__content {
+        position: relative;
+        z-index: 7;
+        .numb {
+          font-size: 75px;
+          line-height: 75px;
+          font-weight: 400;
+          font-family: "Teko", sans-serif;
+          color: transparent;
+          -webkit-text-stroke: 1px #999;
+          opacity: 0.8;
+          margin-bottom: 20px;
+        }
+        h5 {
+          font-size: 40px;
+          margin-bottom: 20px;
+          color: #c5a47e;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      &:hover {
+        &::after {
+          opacity: 0;
+        }
+        .image__content {
+          .numb {
+            -webkit-text-stroke: 1px #fff;
+          }
+          h5 {
+            color: white;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+// End Services

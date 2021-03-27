@@ -1,0 +1,40 @@
+// Start News
+include ../../mixins/title.pug
+.news
+  .container.px-xl-30
+    .row
+      .col-12.mx-auto.text-center
+        +title('Our Blog', 'Latest News')
+    .row
+      .col-md-6
+        .news__item
+          .news__item-image
+            a(href="blog-details.html")
+              img(src="images/home/news-1.jpg", alt="news")
+          .news__item-content
+            h6
+              a(href="blog-details.html") Trending in Modern Architecture
+            .content__info
+              b
+                a(href="#") Event
+                |  | 
+              |  August 6, 2020
+      .col-md-6
+        .news__item
+          .news__item-image
+            a(href="blog-details.html")
+              img(src="images/home/news-2.jpg", alt="news")
+          .news__item-content
+            h6
+              a(href="blog-details.html") Top 5 Insipration Interior Design for Your Kitchen
+            .content__info
+              b
+                a(href="#") Design
+                |  | 
+              |  July 6, 2020
+      .col-md-12
+        .news__button
+          a.btn(href="#")
+            span Discover More
+              i.ti-arrow-right
+// End News

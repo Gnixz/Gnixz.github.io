@@ -1,0 +1,28 @@
+// Start Lines
+.lines {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  &__inner {
+    position: absolute;
+    width: 1140px;
+    left: 50%;
+    margin-left: -570px;
+    top: 0;
+    height: 100%;
+    border-left: 1px solid #323232;
+    border-right: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+    &-content {
+      position: absolute;
+      left: 33.666666%;
+      right: 33.666666%;
+      height: 100%;
+      border-left: 1px solid #323232;
+      border-right: 1px solid #323232;
+    }
+  }
+}
+// End Lines

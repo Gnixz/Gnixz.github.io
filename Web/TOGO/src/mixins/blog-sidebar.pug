@@ -1,0 +1,49 @@
+mixin blog-sidebar
+  .blog__sidebar
+    .blog__sidebar-search.widget
+      form(action="")
+        input(type="text" name="s" placeholder="Type here ...")
+    .blog__sidebar-recent.widget
+      .widget-title
+        h6 Recent Posts
+      ul
+        li
+          a(href="#") Trending in Modern Architecture
+        li
+          a(href="#") Top 5 Insipration Interior Design for Your Kitchen
+        li
+          a(href="#") Renovation Architecture and Design
+        li
+          a(href="#") Top 10 Award Winner Interior
+    .blog__sidebar-categories.widget
+      .widget-title
+        h6 Categories
+      ul
+        li
+          a(href="#") Design
+        li
+          a(href="#") Discover
+        li
+          a(href="#") Event
+        li
+          a(href="#") Exterior
+    .blog__sidebar-archives.widget
+      .widget-title
+        h6 Archives
+      ul
+        li
+          a(href="#") August 2020
+        li
+          a(href="#") July 2020
+        li
+          a(href="#") May 2020
+    .blog__sidebar-tags.widget
+      .widget-title
+        h6 Tags
+      .tagcloud
+        a(href="#") Architecture
+        a(href="#") Art
+        a(href="#") Design
+        a(href="#") Exterior
+        a(href="#") Interior
+        a(href="#") Modern

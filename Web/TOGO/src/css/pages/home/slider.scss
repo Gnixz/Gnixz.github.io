@@ -1,0 +1,114 @@
+// Start Slider
+.slider {
+  position: relative;
+  min-height: 100vh;
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: black;
+      opacity: 0.3;
+    }
+    .container {
+      z-index: 9;
+      text-align: center;
+      h4 {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        letter-spacing: 15px;
+        color: white;
+        @include breakpoint(991) {
+          font-size: 30px;
+        }
+        @include breakpoint(479) {
+          font-size: 15px;
+          line-height: 1.75em;
+        }
+      }
+      h1 {
+        font-size: 75px;
+        color: red;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        @include breakpoint(991) {
+          font-size: 45px;
+          line-height: 1.2em;
+        }
+        @include breakpoint(479) {
+          font-size: 40px;
+          line-height: 1.2em;
+        }
+      }
+    }
+  }
+}
+.owl-slider {
+  .owl-item {
+    height: 100vh;
+    &.active {
+      h4 {
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-name: fadeInUp;
+        animation-delay: 0.2s;
+      }
+      h1 {
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-name: fadeInUp;
+        animation-delay: 0.6s;
+      }
+      .btn {
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-name: zoomIn;
+        animation-delay: 1.2s;
+      }
+    }
+  }
+  &.owl-theme {
+    .owl-dots {
+      position: absolute;
+      bottom: 5vh;
+      width: 100%;
+      margin-top: 20px;
+      line-height: 0.7;
+      .owl-dot {
+        span {
+          width: 8px;
+          height: 8px;
+          margin: 0 4px;
+          border-radius: 50%;
+          background: #ddd;
+        }
+        &:focus {
+          outline: none;
+        }
+        &.active {
+          span {
+            background: #c5a47e;
+          }
+        }
+      }
+    }
+  }
+}
+// End Slider

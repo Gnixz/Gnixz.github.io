@@ -1,0 +1,21 @@
+// Start Blog
+include ../../mixins/title.pug
+include ../../mixins/blog-item.pug
+include ../../mixins/blog-sidebar.pug
+.blog
+  .container.px-xl-30
+    .row
+      .col-12
+        +title('News', 'Our Blog')
+    .row
+      .col-sm-8
+        +blog-item('images/layouts/services-2.jpg', 'Discover', 'May 8, 2020','Renovation Architecture and Design', 'Quality tristique consectetur ipsum, eget pretium mi placerat et. Integer id libero eget ipsum vehicula sodales ac quis tellus. Donec sem sem, mattis sed orci at, eleifend tincidunt tortor. Aenean aliquet nulla eget eros sagittis porttitor. Nunc lacinia maximus purus, sit amet tempor purus vulputate non. Integer nec odio non velit tempor vestibulum. Aliquam rhoncus ...')
+        +blog-item('images/layouts/services-4.jpg', 'Exterior', 'November 13, 2020','Top 10 Award Winner Interior', 'Quality tristique consectetur ipsum, eget pretium mi placerat et. Integer id libero eget ipsum vehicula sodales ac quis tellus. Donec sem sem, mattis sed orci at, eleifend tincidunt tortor. Aenean aliquet nulla eget eros sagittis porttitor. Nunc lacinia maximus purus, sit amet tempor purus vulputate non. Integer nec odio non velit tempor vestibulum. Aliquam rhoncus ...')
+        ul.blog__pagination
+          li.blog__pagination-item
+            a.item__link(href="blog.html") 1
+          li.blog__pagination-item
+            a.item__link.active(href="blog-2.html") 2
+      .col-sm-4
+        +blog-sidebar
+// End Blog

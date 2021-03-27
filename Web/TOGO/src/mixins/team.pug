@@ -1,0 +1,12 @@
+mixin team
+  include ../mixins/title.pug
+  include ../mixins/team-item.pug
+  .team
+    .container.px-xl-30
+      .row
+        .col-12.mx-auto.text-center
+          +title('Professional', 'Our Team')
+      .owl-team.owl-carousel.owl-theme
+        +team-item('images/layouts/team-1.jpg', 'Matthew Adam', 'Managing Director')
+        +team-item('images/layouts/team-2.jpg', 'Linda Brown', 'Creative Director')
+        +team-item('images/layouts/team-3.jpg', 'Heidi Emma', 'Project Manager')

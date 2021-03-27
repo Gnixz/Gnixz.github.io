@@ -1,0 +1,96 @@
+// Start Portfolio
+.portfolio {
+  position: relative;
+  padding: 100px 0;
+  &__item {
+    position: relative;
+    overflow: hidden;
+    @include breakpoint(991) {
+      margin-bottom: 50px;
+    }
+    &-image {
+      position: relative;
+      overflow: hidden;
+      img {
+        transition: all 0.5s;
+        filter: brightness(100%);
+      }
+    }
+    &-content {
+      padding: 30px;
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%;
+      transition: all 0.3s;
+      text-align: center;
+      span {
+        color: #c5a47e;
+        font-size: 20px;
+        font-family: "Teko", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+      }
+      h5 {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 15px;
+        text-transform: none;
+      }
+      a {
+        i {
+          color: #fff;
+          font-size: 20px;
+          transition: all 0.3s ease-out;
+          &:hover {
+            color: #c5a47e;
+          }
+        }
+      }
+    }
+    &:hover {
+      .portfolio__item {
+        &-image {
+          img {
+            filter: brightness(40%);
+            transform: scale(1.09, 1.09);
+            transition: all 1s ease;
+          }
+        }
+        &-content {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+.owl-portfolio {
+  &.owl-theme {
+    .owl-nav.disabled + .owl-dots {
+      margin-top: 20px;
+      line-height: 0.7;
+    }
+    .owl-dots {
+      .owl-dot {
+        &:focus {
+          outline: none;
+        }
+        span {
+          width: 8px;
+          height: 8px;
+          margin: 0 4px;
+          border-radius: 50%;
+          background: #ddd;
+        }
+        &.active {
+          span {
+            background: #c5a47e;
+          }
+        }
+      }
+    }
+  }
+}
+// End Portfolio

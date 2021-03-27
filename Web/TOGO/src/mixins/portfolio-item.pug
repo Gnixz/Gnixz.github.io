@@ -1,0 +1,10 @@
+mixin portfolio-item(src, span, a)
+  .portfolio__item
+    .portfolio__item-image
+      img(src= src, alt="portfolio")
+    .portfolio__item-content
+      span= span
+      h5
+        a(href="portfolio-details.html")= a
+      a(href="portfolio-details.html")
+        i.ti-arrow-right

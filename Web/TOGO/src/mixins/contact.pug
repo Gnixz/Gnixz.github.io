@@ -1,0 +1,67 @@
+mixin contact
+  include ../mixins/title.pug
+  .contact
+    .container.px-xl-30
+      .row
+        .col-12.mx-auto.text-center
+          +title('Get In Touch', 'Contact Us')
+      .row
+        .col-sm-4
+          .contact__item(style="background-image: url(images/layouts/contact.jpg)")
+            .contact__item-content
+              h5 LONDON
+              p
+                i.ti-home
+                |  15 Crow Pl, South Kensington, London, UK
+              p
+                i.ti-mobile
+                |  +44 20 1234 4444 
+              p
+                i.ti-envelope
+                |  london@togo.com
+        .col-sm-4
+          .contact__item(style="background-image: url(images/layouts/contact.jpg)")
+            .contact__item-content
+              h5 PARIS
+              p
+                i.ti-home
+                |  5 Rue Saint-Roch, 75001 Paris, France
+              p
+                i.ti-mobile
+                |  +33 1 1234 4444 
+              p
+                i.ti-envelope
+                |  paris@togo.com
+        .col-sm-4
+          .contact__item(style="background-image: url(images/layouts/contact.jpg)")
+            .contact__item-content
+              h5 NEW YORK
+              p
+                i.ti-home
+                |  363 W 16th St, New York, NY 10011, USA
+              p
+                i.ti-mobile
+                |  +1 212 12 4444 
+              p
+                i.ti-envelope
+                |  newyork@togo.com
+      .row
+        .col-sm-6.mx-auto
+          form(action="")
+            .row
+              .col-sm-6
+                .form-controls
+                  input(type="text" name="name" required placeholder="Your Name")
+              .col-sm-6
+                .form-controls
+                  input(type="email" name="email" required placeholder="E-mail")
+              .col-sm-12
+                .form-controls
+                  input(type="text" name="subject" placeholder="Subject")
+              .col-sm-12
+                .form-controls
+                  textarea(name="message" cols="100" rows="10" required placeholder="Your Message")
+              .col-sm-12.text-center
+                button.btn(type="submit")
+                  span Send Message 
+                    i.ti-arrow-right

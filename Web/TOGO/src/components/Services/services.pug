@@ -1,0 +1,23 @@
+// Start Services
+include ../../mixins/title.pug
+include ../../mixins/services-item.pug
+.services
+  .container.px-xl-30
+    .row
+      .col-12.mx-auto
+        +title('What We Do', 'Our Services')
+    .row
+      .col-lg-4
+        +services-item('01', 'Architecture', 'Architecture bibendum eros eget lacus the vulputate, sit amet vehicula nibh placerat in lectus vitae justo pulvinar cursus.')(style="background-image: url(images/layouts/services-1.jpg)")
+      .col-lg-4
+        +services-item('02', 'Interior Design', 'Interior design eros eget lacus the vulputate, sit amet vehicula nibh placerat in lectus vitae the justo pulvinar of cursus.')(style="background-image: url(images/layouts/services-2.jpg)")
+      .col-lg-4
+        +services-item('03', 'Urban Design', 'Urban design eros eget lacus the vulputate, sit amet vehicula nibh placerat in lectus vitae the justo pulvinar of cursus.')(style="background-image: url(images/layouts/services-3.jpg)")
+      .col-lg-4
+        +services-item('04', 'Planning', 'Urban design eros eget lacus the vulputate, sit amet vehicula nibh placerat in lectus vitae the justo pulvinar of cursus.')(style="background-image: url(images/layouts/services-4.jpg)")
+      .col-lg-4
+        +services-item('05', '3D Modelling', 'Urban design eros eget lacus the vulputate, sit amet vehicula nibh placerat in lectus vitae the justo pulvinar of cursus.')(style="background-image: url(images/layouts/services-2.jpg)")
+      .col-lg-4
+        +services-item('06', 'Decor Plans', 'Urban design eros eget lacus the vulputate, sit amet vehicula nibh placerat in lectus vitae the justo pulvinar of cursus.')(style="background-image: url(images/layouts/services-1.jpg)")
+
+// End Services

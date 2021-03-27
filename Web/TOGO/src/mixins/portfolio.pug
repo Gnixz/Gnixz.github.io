@@ -1,0 +1,17 @@
+mixin portfolio
+  include ../mixins/title.pug
+  include ../mixins/portfolio-item.pug
+  .portfolio
+    .container.px-xl-30
+      .row
+        .col-12.mx-auto.text-center
+          +title('Our Projects', 'Portfolio')
+      .owl-portfolio.owl-carousel.owl-theme
+        +portfolio-item('images/layouts/portfolio-1.jpg', 'Interior', 'House Office, CA')
+        +portfolio-item('images/layouts/portfolio-2.jpg', 'Interior', 'Art Museum, USA')
+        +portfolio-item('images/layouts/portfolio-3.jpg', 'Architecture', 'Drana Villa, CA')
+        +portfolio-item('images/layouts/portfolio-4.jpg', 'Design', 'Home Design, USA')
+        +portfolio-item('images/layouts/portfolio-1.jpg', 'Interior', 'House Office, CA')
+        +portfolio-item('images/layouts/portfolio-2.jpg', 'Interior', 'Art Museum, USA')
+        +portfolio-item('images/layouts/portfolio-3.jpg', 'Architecture', 'Drana Villa, CA')
+        +portfolio-item('images/layouts/portfolio-4.jpg', 'Design', 'Home Design, USA')

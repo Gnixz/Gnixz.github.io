@@ -1,0 +1,87 @@
+// Start Blog Details
+include ../../mixins/blog-sidebar.pug
+.blogDetails
+  .container.px-xl-30
+    .row
+      .col-sm-8
+        .blogDetails__item
+          .blogDetails__item-image
+            img(src="images/layouts/services-1.jpg", alt="blog details")
+          .blogDetails__item-content
+            .content__info
+              b
+                a(href="#") Event
+                |  | 
+              | August 6 2020
+              span
+                |  | 
+                a(href="#") Tags: 
+                a(href="#") Design
+                | ,
+                a(href="#") Modern
+            h5 Trending in Modern Architecture
+            .content__text
+              p Quality tristique consectetur ipsum, eget pretium mi placerat et. Integer id libero eget ipsum vehicula sodales ac quis tellus. Donec sem sem, mattis sed orci at, eleifend tincidunt tortor. Aenean aliquet nulla eget eros sagittis porttitor. Nunc lacinia maximus purus, sit amet tempor purus vulputate non. Integer nec odio non velit tempor vestibulum.
+              p.spical Aliquam rhoncus, tortor nec maximus pharetra, elit magna ornare mauris, ut porta lorem ligula at orci. Proin semper sem eget lorem scelerisque rutrum sed luctus quam. Duis viverra sem aliquet sollicitudin bibendum. Duis blandit, mauris eu dapibus congue, erat augue faucibus sem, ut tempor.
+              p Drana tristique consectetur ipsum, eget pretium mi placerat et. Integer id libero eget ipsum vehicula sodales ac quis tellus. Donec sem sem, mattis sed orci at, eleifend tincidunt tortor. Aenean aliquet nulla eget eros sagittis porttitor. Nunc lacinia maximus purus, sit amet tempor purus vulputate non. Integer nec odio non velit tempor vestibulum.
+        .blogDetails__comment
+          h5
+            | 3 Comments on “ 
+            span Trending in Modern Architecture ”
+          ol.blogDetails__comment-list
+            li
+              .item
+                .item__author
+                  img(src="images/layouts/comment.jpeg", alt="comment")
+                .item__info
+                  h6
+                    a(href="#") Matthew Adam
+                  span November 6, 2020
+                .item__text
+                  p Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat porttitor at sem.
+                .item__reply
+                  a(href="#") Reply
+              ul.children
+                li
+                  .item
+                    .item__author
+                      img(src="images/layouts/comment.jpeg", alt="comment")
+                    .item__info
+                      h6
+                        a(href="#") Matthew Adam
+                      span November 6, 2020
+                    .item__text
+                      p Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    .item__reply
+                      a(href="#") Reply
+            li
+              .item
+                .item__author
+                  img(src="images/layouts/comment.jpeg", alt="comment")
+                .item__info
+                  h6
+                    a(href="#") Matthew Adam
+                  span November 6, 2020
+                .item__text
+                  p Donec sollicitudin molestie malesuada. Proin eget tortor risus.
+                .item__reply
+                  a(href="#") Reply
+        .blogDetails__reply
+          h3 Leave a Comment 
+          form(action="")
+            p.reply-notes Your email address will not be published. Required fields are marked 
+              span *
+            .row
+              .col-sm-6
+                input(type="text" name="author" placeholder="Name *" required)
+              .col-sm-6
+                input(type="email" name="email" placeholder="Email *" required)
+              .col-sm-12
+                textarea(name="comment" placeholder="Comment *" required cols="40" rows="7")
+              .col-sm-12
+                button.btn(type="submit")
+                  span Send
+                    i.ti-arrow-right
+      .col-sm-4
+        +blog-sidebar
+// End Blog Details

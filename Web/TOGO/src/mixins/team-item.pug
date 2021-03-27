@@ -1,0 +1,14 @@
+mixin team-item(src, h6, span)
+  .team__item
+    .team__item-image
+      img(src= src, alt="team")
+      .image__info
+        .image__info-social
+          a.social__icon(href="#")
+            i.ti-facebook
+          a.social__icon(href="#")
+            i.ti-twitter
+          a.social__icon(href="#")
+            i.ti-linkedin
+    h6= h6
+    span= span

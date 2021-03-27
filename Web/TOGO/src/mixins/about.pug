@@ -1,0 +1,23 @@
+mixin about
+  include ../mixins/title.pug
+  .about
+    .container.px-xl-30
+      .row
+        .col-md-6
+          +title('About Us', 'About TOGO')
+          .about__text
+            p Quisque urna nisi, congue sit amet lorem sit amet, sodales pretium risus. Nulla porta eget augue a consequat. Suspendisse auctor faucibus tortor quis malesuada. Pellentesque eget nisl non orci finibus tincidunt at eu nisl.
+            p Nulla porta eget augue a consequat. Suspendisse auctor faucibus tortor quis the drana. Pellentesque eget nisl non orci finibus tincidunt at eu nisl.
+            p Architecture bibendum pharetra eleifend. Suspendisse vel volutpat purus, sit amet bibendum nisl. Cras mollis turpis a ipsum ultes, nec condimentum ipsum consequat. Mauris vitae consequat nibh, vitae interdum mi.
+        .col-md-6
+          .about__image
+            img(src="images/layouts/about.png", alt="about")
+            a(href="https://www.youtube.com/watch?v=JoFxyrfYOuc&list=PLZLjCxQxwJSaVlw3jgmleo8PGfOd17QqN&index=210" data-fancybox="video")
+              span
+                i.ti-control-play
+        .col-12
+          .about__year
+            .numb 10
+            .about__year-title
+              h6 IN ARCHITECTURE DESING
+              h4 Years of Experience

@@ -1,0 +1,22 @@
+// Start Clients
+.clients {
+  position: relative;
+  padding: 20px 0;
+  &__item {
+    opacity: 0.7;
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      transition: all 0.5s;
+      filter: grayscale(100%);
+    }
+    &:hover {
+      opacity: 1;
+      img {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+// End Clients
